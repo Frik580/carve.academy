@@ -1,0 +1,35 @@
+.about-us {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://storage.yandexcloud.net/carve/images/about2.webp');
+}
+
+.about-us__conteiner {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgba(33,33,33, .3) 20%, rgba(33,33,33, 0) 80%);
+    padding: 20px;
+}
+
+.about-us__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    margin: auto;
+    padding: 50px;
+}

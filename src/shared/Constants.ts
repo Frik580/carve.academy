@@ -15,8 +15,10 @@ export const NEWS = 80;
 export const BASE_URL = 'https://fondmira-pk.ru/'
 export const SERVER_URL = 'https://storage.yandexcloud.net/carve/'
 
-export const TOP_NEWS_COVER = `${SERVER_URL}wall3.webp`
-export const TOP_NEWS_COVER_LITE = `${SERVER_URL}wall3_lite.webp`
+export const TOP_NEWS_COVER = `${SERVER_URL}wall5.webp`
+export const TOP_NEWS_COVER_LITE = `${SERVER_URL}wall5_lite.webp`
+export const ABOUT_US_COVER = `${SERVER_URL}images/about.webp`
+export const ABOUT_US_COVER_LITE = `${SERVER_URL}images/about_lite.webp`
 
 export const DOCUMENTS_COVER = `${SERVER_URL}cover/Documents.webp`
 export const DOCUMENTS_COVER_LITE = `${SERVER_URL}cover/lite/Documents_lite.webp`

@@ -1,0 +1,11 @@
+.courses {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-color: var(--color-dark-blue);
+}

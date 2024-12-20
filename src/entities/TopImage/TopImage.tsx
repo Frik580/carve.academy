@@ -12,6 +12,7 @@ type TopImageProps = {
 
 export const TopImage: FC<TopImageProps> = ({ src, srclite }) => {
     const [srcBase64, setSrcBase64] = useState("");
+    const [load, setLoad] = useState(false);
 
     useEffect(() => {
         toDataURL(srclite).then((dataUrl) => {
@@ -20,15 +21,17 @@ export const TopImage: FC<TopImageProps> = ({ src, srclite }) => {
     }, [srclite]);
 
     return (
-        <div className="topimage">
+        <div className="topimage" >
             <Image
                 src={src}
+                // className={`topimage__image ${load ? "loaded" : ""}`}
                 className={`topimage__image`}
                 alt="Фоновая картинка"
                 fill
                 sizes="(max-width: 425px) 75vw, 100vw"
                 placeholder={!!srcBase64 ? "blur" : "empty"}
                 blurDataURL={!!srcBase64 ? srcBase64 : ""}
+                // onLoad={() => setLoad(true)}
             />
         </div>
     );

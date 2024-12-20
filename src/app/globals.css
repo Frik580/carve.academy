@@ -1,42 +1,105 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import url(../shared/Styles/normalize.css);
+@import url(../shared/Styles/fonts/fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+    /* scroll-behavior: smooth; */
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+:root {
+    font-family: "Roboto", "Inter", sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    /* Colors */
+    --color-orange: #fc5434;
+    --color-yellow: #fcc480;
+    --color-red: #680f38;
+    --color-blue: #5884a3;
+    --color-light-blue: #acb9d4;
+    --color-dark-blue: #2c3e50;
+    --color-white: #f4f4f4;
+    --color-black: #1c1c1c;
+    --color-text: #2c2c2c;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--color-white);
+    border-radius: 4px;
+    /* width: 5px; */
+    box-shadow:
+        inset 0px 0px 2px rgb(0 0 0 / 60%);
+}
+
+/* .main {
+    min-height: 100vh;
+    width: 100vw;
+} */
+
+.text {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-text);
+}
+
+@media (max-width: 1023px) {
+    .text {
+        font-size: 18px;
+    }
+}
+
+.li {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 10px;
+}
+
+@media (max-width: 1023px) {
+    .li {
+        font-size: 18px;
+    }
+}
+
+.link {
+    color: var(--color-marine);
+}
+
+.title {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-text);
 }
